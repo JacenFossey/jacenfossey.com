@@ -1,51 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jacen Fossey</title>
-  <meta
-    name="description"
-    content="Micro-software for distributors, manufacturers, and operational B2B companies."
-  >
-  <style>
-    body {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 80px 24px;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 24px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 620px;
-    }
-
-    .tagline {
-      margin-top: 32px;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jacen Fossey builds focused software for stubborn business processes, especially awkward spreadsheets and disconnected operational workflows.">
+  <meta name="theme-color" content="#ebe4d6">
+  <title>Jacen Fossey — Small software for stubborn business processes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <h1>Necaj Yessof</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <p>
-    I build micro-software for distributors, manufacturers,
-    and operational B2B companies.
-  </p>
+  <header class="site-header">
+    <div class="header-inner frame">
+      <a class="wordmark" href="#top" aria-label="Jacen Fossey, home">
+        <span class="wordmark-mark" aria-hidden="true">JF/</span>
+        <span>Jacen Fossey</span>
+      </a>
 
-  <p class="tagline">
-    Show me the spreadsheet everyone hates.
-  </p>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>Index</span>
+        <span class="menu-glyph" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero frame" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="hero-workbench.png" alt="A paper work sheet, pencil, caliper, and laptop on a worn steel workbench.">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-kicker">Jacen Fossey / Independent software practice / Hamilton, Ontario</p>
+          <h1 id="hero-title">Small software for <em>stubborn</em> <br>business processes.</h1>
+          <p class="hero-intro">I build focused tools for distributors, manufacturers, and other operational businesses—especially where an overgrown spreadsheet is doing the job of a proper system.</p>
+        </div>
+      </div>
+
+      <div class="hero-statement">
+        <a href="#contact"><span>Show me the spreadsheet everyone hates.</span><small>Start a conversation&nbsp; ↗</small></a>
+      </div>
+    </section>
+
+    <section class="section work-section frame" id="work" aria-labelledby="work-title">
+      <header class="section-heading">
+        <p class="section-label" id="work-title">02 / Selected work</p>
+        <p class="section-note">Two tools built from problems I encountered firsthand.</p>
+      </header>
+
+      <div class="case-list">
+        <article class="case-file">
+          <header class="project-header"><div><p class="project-status">In active development</p><h3>Sidecar</h3></div><p>A focused sales workspace built around the real work of managing accounts, calls, and commercial follow-up across existing company systems.</p></header>
+          <figure class="project-image"><img src="sidecar-workspace.png" alt="An anonymized concept view of Sidecar’s account, calling, and follow-up workspace."><figcaption>Account context, open work, and calling in one focused view.</figcaption></figure>
+        </article>
+
+        <article class="case-file">
+          <header class="project-header"><div><p class="project-status">Prototype</p><h3>Territory Atlas</h3></div><p>A map-first tool for learning and visualizing the geographic regions, municipalities, and boundaries of a sales territory.</p></header>
+          <figure class="project-image project-image-secondary"><img src="territory-atlas-map.png" alt="An anonymized concept view of Territory Atlas showing regional boundaries and place information."><figcaption>Territory geography made explorable, not memorized from a list.</figcaption></figure>
+        </article>
+      </div>
+    </section>
+    <section class="closing-section" id="about" aria-labelledby="about-title">
+      <div class="frame closing-grid">
+        <div class="closing-about"><p class="section-label">About</p><h2 id="about-title">I’m Jacen Fossey.</h2><p>I work close to real sales and operational processes, and build small software around problems I can directly understand.</p></div>
+        <div class="closing-contact" id="contact"><h2>What process is taking more work than it should?</h2><p>If there’s a spreadsheet, internal workflow, or repetitive task that keeps causing friction, I’d be glad to hear how it works.</p><a href="mailto:hello@jacenfossey.com">Start a conversation <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="frame footer-grid">
+      <div class="wordmark footer-wordmark"><span class="wordmark-mark" aria-hidden="true">JF</span><span>Jacen Fossey</span></div>
+      <p>Focused software for operational work.</p>
+      <p class="copyright">© <span id="year">2025</span> / REV. 01</p>
+    </div>
+  </footer>
 </body>
 </html>
